@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  /* header section*/
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      padding: 15px;
+    }
+    main {
+     
+        display: flex;
+        background-color: #f9f9f9;
+      }
+      
+        @media (max-width: 768px) {
+            .side-bar {
+              display: none;
+            }
+          }
+          .left {
+            display: flex;
+            align-items: center;
+           }
+           
+           .left #menu {
+            padding: 0 7px;
+            cursor: pointer;
+           }
+           .search {
+            display: flex;
+           }
+           
+           .search form {
+            display: flex;
+            border: 1px solid #ddd;
+            height: 45px;
+           }
+           .search input {
+            width: 600px;
+            padding:10px;
+            border: 0;
+            height: 100%;
+            border-radius: 2px 0 0 2px
+          }
+          
+          input:focus {
+            outline: none;
+            border: 1px solid #ddd;
+          }
+          .search button {
+            height: 100%;
+            width: 60px;
+            border: none;
+          }
+           
+          .mic {
+            margin-top: 10px;
+          }
+            .material-icons{
+              color: rgb(100, 100, 100);
+              padding: 0 7px;
+              cursor: pointer;
+            }
+/*--------------------------------------mam----------------------------------*/
+/* Sidebar */ 
+.side-bar {
+  height: 100%;
+  width: 15%;
+  background-color: white;
+  overflow-y: hidden;
+} 
+.logo img{
+    width:150px;
+    height: 100px;
+}            
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.side-bar ul li{
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.side-bar .border{
+  border-bottom: 1px solid gray;
+  opacity: 0.4;
+}
+.side-bar ul .material-icons,.material-Symbols-Outlined{
+  padding: 0px 20px;
+}
+.side-bar ul li .material-icons,.material-Symbols-Outlined{
+  color: black;
+  cursor: pointer;
+}
+.side-bar .first,.second,.third,.four,.five{
+  padding: 10px 0;
+}   
+.side-bar h3{
+  padding-left:  22px;
+}
+.side-bar .third img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+.side-bar .five img{
+  width: 30px;
+  height: 30px;
+  margin: 0 13px;
+}
+
+.side-bar ul li:hover{
+  cursor: pointer;
+  background-color:#f1f1f1;
+  border-radius: 10px;
+  color: black;
+  
+}
+.side-bar .p1{
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: left;
+    color: gray;
+    padding: 27px;
+}
+.side-bar .p2{
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: left;
+  color: gray;
+  padding: 0 26px;
+}
+.side-bar h5{
+  padding: 7px 26px;
+  text-align: left;
+  color: gray;
+}
+/* -------------------------side bar----------------------------------------- */
+.content{
+  width: 85%;
+  margin: 0 auto;
+ padding: 10px 0;
+}
+.con_container ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.con_container ul li{
+  
+  list-style-type: none;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.con_container ul li:hover{
+  background-color: #ddd;
+}
+.content .video{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 70px;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.content .video a{
+  width: 25%;
+  text-decoration: none;
+}
+.content .video a img{
+  width: 295px;
+  height: 155px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+.content .video a pre{
+  font-size: 15px;
+  color: gray;
+  font-weight: 900;
+}
+.content .video p{
+  margin-right: 5px;
+  padding-bottom: 10px;
+}
